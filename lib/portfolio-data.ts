@@ -123,7 +123,7 @@ export const experiences = [
   {
     company: "Candour Tech Solutions",
     role: "Junior Android Developer",
-    period: "Aug 2017 - Dec 2017",
+    period: "Jul 2017 - Jan 2018",
     points: [
       "Built Android apps from scratch.",
       "Worked on Android SDK, UI implementation, testing, and release support."
