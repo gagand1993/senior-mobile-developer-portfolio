@@ -32,6 +32,7 @@ export const heroBadges = [
   "Dart",
   "Jetpack Compose",
   "MVVM",
+  "MVI",
   "Clean Architecture"
 ];
 
@@ -39,7 +40,7 @@ export const skillGroups = [
   {
     title: "Android",
     icon: Smartphone,
-    skills: ["Kotlin", "Java", "Jetpack Compose", "XML", "MVVM", "Coroutines", "Flow", "Hilt", "Room", "Retrofit"]
+    skills: ["Kotlin", "Java", "Jetpack Compose", "XML", "Coroutines", "Flow", "Hilt", "Retrofit"]
   },
   {
     title: "Flutter",
@@ -49,7 +50,7 @@ export const skillGroups = [
   {
     title: "Architecture",
     icon: Layers3,
-    skills: ["Clean Architecture", "MVVM", "MVC", "Dependency Injection"]
+    skills: ["Clean Architecture", "MVVM", "MVI", "MVC", "Dependency Injection"]
   },
   {
     title: "APIs & SDKs",
@@ -79,7 +80,7 @@ export const experiences = [
     role: "Sr. Android Developer",
     period: "Feb 2026 - Present",
     points: [
-      "Developing scalable Android applications using Kotlin, Jetpack Compose, MVVM, and modern Android architecture.",
+      "Developing scalable Android applications using Kotlin, Jetpack Compose, MVVM, MVI, and modern Android architecture.",
       "Working with Compose Multiplatform (CMP) and Kotlin Multiplatform (KMP) for shared UI and business logic.",
       "Contributing to React Native mobile features with Claude-assisted development for faster implementation and debugging.",
       "Improving app performance, stability, and release quality through testing, optimization, and cross-functional collaboration."
