@@ -75,6 +75,17 @@ export const skillGroups = [
 
 export const experiences = [
   {
+    company: "Code Brew Innovation Pvt Ltd",
+    role: "Sr. Android Developer",
+    period: "Feb 2026 - Present",
+    points: [
+      "Developing scalable Android applications using Kotlin, Jetpack Compose, MVVM, and modern Android architecture.",
+      "Working with Compose Multiplatform (CMP) and Kotlin Multiplatform (KMP) for shared UI and business logic.",
+      "Contributing to React Native mobile features with Claude-assisted development for faster implementation and debugging.",
+      "Improving app performance, stability, and release quality through testing, optimization, and cross-functional collaboration."
+    ]
+  },
+  {
     company: "DigiMantra Labs",
     role: "Senior Mobile Application Developer",
     period: "Oct 2023 - Dec 2025",
