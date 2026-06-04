@@ -95,6 +95,26 @@ textarea {
   transform: translateY(-1px);
 }
 
+.nav-photo-shell {
+  display: grid;
+  place-items: center;
+  height: 2.75rem;
+  width: 2.75rem;
+  overflow: hidden;
+  border-radius: 9999px;
+  border: 2px solid rgba(23, 183, 166, 0.85);
+  background: #020607;
+  box-shadow: 0 10px 26px rgba(23, 183, 166, 0.2);
+}
+
+.nav-photo {
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
 [data-theme="light"] .theme-toggle {
   border-color: rgba(203, 213, 225, 0.95);
   background: #ffffff;
@@ -131,7 +151,8 @@ textarea {
 }
 
 .premium-gradient-text {
-  background: linear-gradient(135deg, #ffffff 0%, #d5fff9 45%, #f7c2ad 100%);
+  background: linear-gradient(115deg, #ffffff 0%, #d5fff9 28%, #17b7a6 44%, #f7c2ad 62%, #ffffff 100%);
+  background-size: 240% 100%;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -145,6 +166,8 @@ textarea {
   line-height: 1.12;
   letter-spacing: 0;
   text-wrap: balance;
+  animation: heroNameReveal 850ms ease-out both, heroNameShimmer 5.5s ease-in-out 900ms infinite;
+  will-change: background-position, filter, transform;
 }
 
 .hero-showcase::before {
@@ -303,9 +326,43 @@ textarea {
 }
 
 .light .premium-gradient-text {
-  background: linear-gradient(135deg, #0f172a 0%, #0f8f86 58%, #cc4f2c 100%);
+  background: linear-gradient(115deg, #0f172a 0%, #0f8f86 30%, #17b7a6 46%, #cc4f2c 64%, #0f172a 100%);
+  background-size: 240% 100%;
   -webkit-background-clip: text;
   background-clip: text;
+}
+
+@keyframes heroNameReveal {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroNameShimmer {
+  0%,
+  100% {
+    background-position: 0% 50%;
+    filter: drop-shadow(0 0 0 rgba(23, 183, 166, 0));
+  }
+
+  50% {
+    background-position: 100% 50%;
+    filter: drop-shadow(0 14px 28px rgba(23, 183, 166, 0.18));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-title {
+    animation: none;
+  }
 }
 
 .section-anchor {
@@ -594,5 +651,9 @@ textarea {
   .hero-title {
     font-size: clamp(2.75rem, 14vw, 4.25rem);
     line-height: 1.08;
+  }
+
+  .hero-metrics {
+    grid-template-columns: 1fr;
   }
 }

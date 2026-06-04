@@ -1,6 +1,7 @@
 "use client";
 
 import { Download, Menu } from "lucide-react";
+import Image from "next/image";
 import { useState } from "react";
 import { navItems } from "@/lib/portfolio-data";
 import { ThemeToggle } from "@/components/theme-toggle";
@@ -12,8 +13,15 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-white/10 bg-ink/82 backdrop-blur-xl light:border-slate-200 light:bg-cloud/88">
       <nav className="section-shell flex h-16 items-center justify-between gap-4">
         <a href="#home" className="focus-ring flex items-center gap-3 rounded-full">
-          <span className="grid h-10 w-10 place-items-center rounded-full bg-teal-450 text-sm font-black text-ink">
-            GS
+          <span className="nav-photo-shell">
+            <Image
+              src="/profile-photo.png"
+              alt="Gagandeep Singh"
+              width={44}
+              height={44}
+              className="nav-photo"
+              priority
+            />
           </span>
           <span className="hidden text-sm font-bold tracking-wide sm:block">Gagandeep Singh</span>
         </a>

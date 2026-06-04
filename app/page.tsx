@@ -113,7 +113,7 @@ export default function Home() {
         <SectionHeading eyebrow="About" title="Senior mobile engineering with product-grade delivery" />
         <div className="glass mx-auto max-w-5xl rounded-lg p-6 sm:p-8">
           <p className="text-lg leading-9 text-slate-200 light:text-slate-700">
-            Senior Mobile Application Developer with 8+ years of experience in Android and Flutter development. Skilled in building scalable mobile apps using Kotlin, Java, Jetpack Compose, Flutter, Dart, MVVM, Clean Architecture, BLoC, GetX, Retrofit, Dio, Room, Hilt, Firebase, and third-party SDK integrations. Experienced in performance optimization, team leadership, Agile development, app deployment, and end-to-end mobile product delivery.
+            Senior Mobile Application Developer with 8+ years of experience in Android, Flutter, and React Native development. Skilled in building scalable mobile apps using Kotlin, Java, Jetpack Compose, Compose Multiplatform (CMP), Kotlin Multiplatform (KMP), Flutter, Dart, MVVM, Clean Architecture, BLoC, GetX, Retrofit, Dio, Room, Hilt, Firebase, and third-party SDK integrations. Experienced in performance optimization, team leadership, Agile development, app deployment, and end-to-end mobile product delivery.
           </p>
         </div>
       </section>
